@@ -9,7 +9,7 @@ checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRe
     }
 
     stage('Create Github Jobs') {
-        jobDsl failOnSeedCollision: true, removedConfigFilesAction: 'DELETE', removedJobAction: 'DELETE', removedViewAction: 'DELETE', targets: 'Pipeline.dsl'
+        jobDsl failOnSeedCollision: true, removedConfigFilesAction: 'DELETE', removedJobAction: 'DELETE', removedViewAction: 'DELETE', targets: 'pipeline.dsl'
     }
 
 } } }
