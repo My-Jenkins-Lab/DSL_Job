@@ -1,8 +1,5 @@
 import jenkins.model.*
-import com.cloudbees.plugins.credentials.common.StandardUsernameCredentials
-import com.cloudbees.plugins.credentials.CredentialsProvider
-import groovy.json.JsonSlurper
-import org.yaml.snakeyaml.Yaml
+
 
 String basePath = 'Test'
 pJobPath = 'Test/Testy'
