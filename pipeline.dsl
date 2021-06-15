@@ -5,4 +5,6 @@ job('From_dsl') {
   steps {
     shell('echo Hello World!')
   }
+  triggers {
+  }
 }
