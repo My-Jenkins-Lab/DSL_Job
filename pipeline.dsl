@@ -5,6 +5,13 @@ job('From_dsl') {
   steps {
     shell('echo Hello World!')
   }
-  triggers {
-  }
+}
+
+pipelineJob('example_pipeline') {
+    definition {
+        cps {
+            script(readFileFromWorkspace('project-a-workflow.groovy'))
+            sandbox()
+        }
+    }
 }
